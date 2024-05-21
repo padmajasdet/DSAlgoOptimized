@@ -7,7 +7,7 @@ When The user clicks signin text
 Then user enters  "greenhorns"  and "testing..." 
 Then user clicks on Login button with expected status as "You are logged in"
 When User clicks "Linked List" Get Started button
-Then User should land on "Linked List" home page
+Then User should land on the corresponding "Linked List" home page
 
 Scenario Outline: Linked List Page
 

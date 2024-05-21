@@ -15,6 +15,7 @@ public class PageObjectManager {
  RegistrationPage registrationpage;
  LinkedListPage linkedListPage;
  TryEditorPage tryEditorPage;
+ DSIntroductionPage dsIntroductionPage;
  HomePage homePage;
  
 	public PageObjectManager(WebDriver driver) {
@@ -53,5 +54,9 @@ public class PageObjectManager {
 	public TryEditorPage getTryEditorPage() {
 		tryEditorPage = new TryEditorPage(driver);
 		return tryEditorPage;
+	}
+	public DSIntroductionPage getDsIntroductionPage() {
+		dsIntroductionPage = new DSIntroductionPage(driver);
+		return dsIntroductionPage;
 	}
 }

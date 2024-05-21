@@ -35,7 +35,13 @@ public class HomeStep {
 		}
 
 	}
+	
 
+	@Then("User should land on {string} home page")
+	public void user_should_land_on_home_page(String string) {
+		System.out.println("background page title = "+ homePage.getTitle());
+		user_should_land_on_the_corresponding_home_page(string);
+	}
 	@When("User clicks {string} Get Started button")
 	public void user_clicks_get_started_button(String dataStructure) {
 		switch (dataStructure) {
