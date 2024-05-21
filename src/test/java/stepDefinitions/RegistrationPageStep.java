@@ -21,7 +21,7 @@ import PageObjects.PageObjectManager;
 import PageObjects.RegistrationPage;
 
 
-public class RegistrationPageStep<user_enters_sheetname_and_rownumber> {
+public class RegistrationPageStep {
 	TextContextSetup textcontextsetup;
 	PageObjectManager pageobjectmanager ;
 	public WebDriver driver;

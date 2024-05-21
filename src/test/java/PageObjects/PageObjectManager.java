@@ -13,6 +13,10 @@ public class PageObjectManager {
  GetStartedPage getstartedpage;
  ExcelReader excelreader;
  RegistrationPage registrationpage;
+ LinkedListPage linkedListPage;
+ TryEditorPage tryEditorPage;
+ HomePage homePage;
+ 
 	public PageObjectManager(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -32,10 +36,22 @@ public class PageObjectManager {
 		excelreader=new ExcelReader();
 		return excelreader;
 		
-			}
+	}
 	public RegistrationPage getRegistrationPage() {
 		registrationpage=new RegistrationPage(driver);
 		return registrationpage ;
 		
+	}
+	public LinkedListPage getLinkedListPage() {
+		linkedListPage = new LinkedListPage(driver);
+		return linkedListPage;
+	}
+	public HomePage getHomePage() {
+		homePage = new HomePage(driver);
+		return homePage;
+	}
+	public TryEditorPage getTryEditorPage() {
+		tryEditorPage = new TryEditorPage(driver);
+		return tryEditorPage;
 	}
 }
