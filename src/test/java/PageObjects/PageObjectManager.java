@@ -13,6 +13,9 @@ public class PageObjectManager {
  GetStartedPage getstartedpage;
  ExcelReader excelreader;
  RegistrationPage registrationpage;
+ ArrayPage arrayPage;
+ GraphPage graphPage;
+ 
 	public PageObjectManager(WebDriver driver) {
 		this.driver=driver;
 	}
@@ -36,6 +39,15 @@ public class PageObjectManager {
 	public RegistrationPage getRegistrationPage() {
 		registrationpage=new RegistrationPage(driver);
 		return registrationpage ;
-		
+			}
+	public ArrayPage getArrayPage() {
+		arrayPage =new ArrayPage(driver);
+		return arrayPage;
 	}
+	public GraphPage getGraphPage() {
+		graphPage =new GraphPage(driver);
+		return graphPage;
+			
+	}
+	
 }
