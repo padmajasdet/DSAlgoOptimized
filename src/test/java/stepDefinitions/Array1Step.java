@@ -67,7 +67,7 @@ public class Array1Step {
 	}
 
 	@When("user clicks on {string} link")
-	public void user_clicks_on_link(String ArraysinPython) throws IOException {
+	public void user_clicks_on_link(String ArraysinPython) throws IOException, InterruptedException {
 		arraypage.testArrayInPython();
 		Assert.assertEquals(textcontextsetup.testbase.WebDriverManager().getTitle(),"Arrays in Python");
 	}
@@ -80,6 +80,7 @@ public class Array1Step {
 
 	@Then("User enters the text in editor from sheetname {string} and rownumber {int}")
 	public void user_enters_the_text_in_editor_from_sheetname_and_rownumber(String sheetName, Integer int1) throws InvalidFormatException, IOException, InterruptedException {
+		arraypage.cleartext();
 		String Excelpath= System.getProperty("user.dir")+"\\src\\test\\resources\\Registration (1).xlsx";
 		List<Map<String,String>> testData = reader.getData(Excelpath, sheetName);
 				 
@@ -113,6 +114,7 @@ public class Array1Step {
 	  String pcode = testData.get(int2).get("pCode");
 	  String  result= testData.get(int2).get("Result");
 		System.out.println("The invalid code entered is :"+pcode);
+		//Thread.sleep(3000);
 	  arraypage.sendTextInEditor(pcode);
 	}
 	@Then("The user should be able to see error message in alert window,accept the alert")
@@ -127,7 +129,7 @@ public class Array1Step {
 	}
 
 	@When("user clicks on {string} link1")
-	public void user_clicks_on_link1(String  ArraysUsingList) throws IOException {
+	public void user_clicks_on_link1(String  ArraysUsingList) throws IOException, InterruptedException {
 		arraypage.arraysUsingList();
 		Assert.assertEquals(textcontextsetup.testbase.WebDriverManager().getTitle(),"Arrays Using List");
 		System.out.println("The Title of Page After clicking Arrays Using Listis:"+textcontextsetup.testbase.WebDriverManager().getTitle());
@@ -207,4 +209,6 @@ public void user_navigates_to_the_practice_page_and_clicks_on_link4(String sorte
 		System.out.println("logged out");
 	}
 
+	
+	
 }

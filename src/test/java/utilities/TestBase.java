@@ -33,7 +33,7 @@ public  WebDriver WebDriverManager() throws IOException {
 		else {
 			System.out.println("Enter a Valid Browser");
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
 		
 	}

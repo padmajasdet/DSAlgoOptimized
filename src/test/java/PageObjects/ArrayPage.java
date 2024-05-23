@@ -1,15 +1,19 @@
 package PageObjects;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ArrayPage {
 	public WebDriver driver;
-	 
+	JavascriptExecutor jse = (JavascriptExecutor) driver;
 	 
 	public ArrayPage(WebDriver driver) {
 		this.driver=driver;
@@ -20,7 +24,8 @@ public class ArrayPage {
 	By arrayinPython=By.linkText("Arrays in Python");
 	By tryhere=By.linkText("Try here>>>");
 	By applicationstryhere=By.xpath("//a[text()='Try here>>>']");
-	By texteditor=By.xpath("//div[contains(@class,'CodeMirror')]//textarea");
+	//By texteditor=By.xpath("//div[contains(@class,'CodeMirror')]//textarea");
+	By texteditor=By.xpath("//*[@id='answer_form']/div/div/div[1]/textarea");
 	By run=By.xpath("//*[@id='answer_form']/button");
 	By console=By.xpath("//div//pre[@id='output']");
 	By arraysUsingList= By.linkText("Arrays Using List");
@@ -67,16 +72,20 @@ public class ArrayPage {
 		return driver.getTitle(); 
 		}
 	
-	public void testArrayInPython() {
+	public void testArrayInPython() throws InterruptedException {
+		//Thread.sleep(1000);
 	driver.findElement(arrayinPython).click();
 			}
-	public void arraysUsingList() {
+	public void arraysUsingList() throws InterruptedException {
+		//Thread.sleep(2000);
 		driver.findElement(arraysUsingList).click();
 				}
-	public void basicOperationsinLists() {
+	public void basicOperationsinLists() throws InterruptedException {
+		Thread.sleep(3000);
 		driver.findElement(basicOperationsinLists).click();
 				}
-	public void applicationsOfArray() {
+	public void applicationsOfArray() throws InterruptedException {
+		//Thread.sleep(3000);
 		driver.findElement(applicationsOfArray).click();
 				}
 	
@@ -89,6 +98,12 @@ public class ArrayPage {
 		jse.executeScript("arguments[0].click();",driver.findElement(applicationstryhere) );
 	}
 	public  void sendTextInEditor(String pycode) throws InterruptedException {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		//jse.executeScript("driver.findElement(texteditor).value=pycode;");
+		//WebDriverWait w = new WebDriverWait(driver,30);		
+		//w.until(ExpectedConditions.visibilityOfElementLocated(texteditor));
+		//jse.executeScript("arguments[0].click();",driver.findElement(texteditor) );
+		//jse.executeScript("arguments[0].value=pycode;",driver.findElement(texteditor));
 		driver.findElement(texteditor).sendKeys(pycode);
 		Thread.sleep(1000);
 	}

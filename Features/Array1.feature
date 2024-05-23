@@ -6,7 +6,7 @@ Given User has already Logged in  using username and password form global proper
 When User clicks on Data Structures dropdown arrow 
 Then user clicks on the arrays 
  
- 
+ @smoke
 Scenario Outline: Try Editor validatipon for  Arrays in Python with testcodes
      Given user is on the "Arrays" page 
      When user clicks on "Arrays in Python" link
@@ -22,7 +22,7 @@ Scenario Outline: Try Editor validatipon for  Arrays in Python with testcodes
 Examples:  
                |SheetName|
                |pythonCode|
- 
+ @smoke
 Scenario Outline: Try Editor validatipon for  Arrays Using List with testcodes
      Given user is on the "Arrays" page 
      When user clicks on "Arrays Using List" link1
@@ -38,6 +38,7 @@ Scenario Outline: Try Editor validatipon for  Arrays Using List with testcodes
 Examples:  
                |SheetName|
                |pythonCode|
+  @retest
 Scenario Outline: Try Editor validatipon for  Arrays Using List with testcodes
      Given user is on the "Arrays" page 
      When user clicks on "Basic Operations in Lists" link2
@@ -53,6 +54,7 @@ Scenario Outline: Try Editor validatipon for  Arrays Using List with testcodes
 Examples:  
                |SheetName|
                |pythonCode|
+ @smoke
  Scenario Outline: Try Editor validatipon for  Arrays Using List with testcodes
      Given user is on the "Arrays" page 
      When user clicks on "Applications of Array" link3
