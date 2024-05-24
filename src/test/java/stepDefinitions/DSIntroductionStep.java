@@ -50,7 +50,28 @@ public class DSIntroductionStep {
 	public void user_should_land_on_the_page(String string) {
 		pageTitle = dsIntroductionPage.getTitle();
 		Assert.assertEquals("Time Complexity", pageTitle);
-		System.out.println("In Time Complexity Page: title = +"+pageTitle);
+		System.out.println("In Time Complexity Page: title = "+pageTitle);
+	}
+	@When("User should click on the Practice Here link")
+	public void user_should_click_on_the_practice_here_link() {
+	    dsIntroductionPage.practiceQtns();
+	}
+	@Then("User should land on Practice button")
+	public void user_should_land_on_practice_button() {
+		pageTitle = dsIntroductionPage.getTitle();
+		Assert.assertEquals(pageTitle, "Practice Questions");
+	}
+	@Then("Navigate back to the corresponding topic page")
+	public void navigate_back_to_the_corresponding_topic_page() {
+		driver.navigate().back();
+	}
+	@Then("User clicks Try here button")
+	public void user_clicks_try_here_button() {
+	    dsIntroductionPage.tryHereBtn();
+	}
+	@Then("Try Editor Is displayed on the {string} page")
+	public void try_editor_is_displayed_on_the_page(String pageTitle) {
+		Assert.assertEquals(tryEditorPage.getTitle(), pageTitle);
 	}
 
 }

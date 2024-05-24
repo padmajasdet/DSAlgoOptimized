@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>28/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>49/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 21 04:39:32 PDT 2024</td>
+<td>Started on:</td><td>Fri May 24 14:23:03 PDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>95 seconds (95542 ms)</td>
+<tr><td>Total time:</td><td>205 seconds (205980 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,177 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.210)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d7c7f854c381f4a1ef2cf5b959df030, get {url=https://dsportalapp.herokuapp.com/home}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.210, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Resmy\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58339}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58339/devtoo..., se:cdpVersion: 124.0.6367.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7c7f854c381f4a1ef2cf5b959df030
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utilities.TestBase.WebDriverManager(TestBase.java:37)
+	at utilities.TextContextSetup.&lt;init&gt;(TextContextSetup.java:19)
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace562376928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace562376928'><pre>org.openqa.selenium.WebDriverException: no such execution context
+  (Session info: chrome=124.0.6367.210)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d7c7f854c381f4a1ef2cf5b959df030, get {url=https://dsportalapp.herokuapp.com/home}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.210, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Resmy\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58339}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58339/devtoo..., se:cdpVersion: 124.0.6367.210, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d7c7f854c381f4a1ef2cf5b959df030
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at utilities.TestBase.WebDriverManager(TestBase.java:37)
+	at utilities.TextContextSetup.&lt;init&gt;(TextContextSetup.java:19)
+	at jdk.internal.reflect.GeneratedConstructorAccessor52.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor96.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>17</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,145 +247,250 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries the editor with invalid code", "Try Editor Page"</td>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
 <td></td>
-<td>5</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>53</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Practice questions link1 with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>55</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>61</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Practice questions link1 with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>75</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
+<td></td>
+<td>32</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>39</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
+<td></td>
+<td>44</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
 <td></td>
 <td>35</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
+<td></td>
+<td>16</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Data Structure Introduction Page", "Data Structure Introduction"</td>
+<td></td>
+<td>51</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
+<td></td>
+<td>27</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
+<td></td>
+<td>26</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>26</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
+<td></td>
+<td>30</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
+<td></td>
+<td>37</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Arrays Using List with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>55</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
 <td></td>
 <td>42</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
-<td></td>
-<td>61</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
-<td></td>
-<td>67</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
-<td></td>
-<td>15</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
-<td></td>
-<td>20</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
-<td></td>
-<td>16</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Get Started Page", "Get Started Page"</td>
-<td></td>
-<td>5</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
-<td></td>
-<td>21</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
-<td></td>
-<td>17</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
-<td></td>
-<td>35</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
 <td></td>
-<td>41</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>45</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Data Structure Introduction Page", "Data Structure Introduction"</td>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>56</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>21</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>48</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Get Started Page", "Get Started Page"</td>
+<td></td>
+<td>6</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
+<td></td>
+<td>16</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Graph  practice questions in Python with testcodes", "Graph functionality with login"</td>
 <td></td>
 <td>35</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Arrays Using List with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>56</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>33</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
+<td></td>
+<td>37</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Practice questions link1 with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>53</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
 <td></td>
 <td>37</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
 <td></td>
-<td>35</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>45</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
 <td></td>
-<td>41</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>52</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
-<td></td>
-<td>31</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
-<td></td>
-<td>62</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
 <td></td>
 <td>36</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
 <td></td>
-<td>47</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>44</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Graph Representations in Python with testcodes", "Graph functionality with login"</td>
+<td></td>
+<td>73</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Practice questions link1 with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>54</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>58</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
 <td></td>
-<td>41</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>39</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>48</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>19</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>37</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Linked List Page", "LinkedList Page"</td>
+<td></td>
+<td>27</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
 <td></td>
-<td>47</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the login functionality", "Signin Page"</td>
-<td></td>
-<td>16</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries the editor with valid code", "Try Editor Page"</td>
-<td></td>
-<td>15</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>17</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
 <td></td>
-<td>22</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>50</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Arrays in Python with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>63</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
+<td></td>
+<td>23</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Graph in Python with testcodes", "Graph functionality with login"</td>
+<td></td>
+<td>63</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "Home page"</td>
+<td></td>
+<td>25</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
+<tr>
+<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try Editor validatipon for  Arrays Using List with testcodes", "Array functionality with login"</td>
+<td></td>
+<td>51</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 <tr>
 <td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
 <td></td>
-<td>40</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
-<tr>
-<td title='CucumberOptions.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "registration with  valid and invalid credentials", "Register page"</td>
-<td></td>
-<td>32</td>
-<td>CucumberOptions.TestRunner@3de8f619</td></tr>
+<td>17</td>
+<td>CucumberOptions.TestRunner@4e5ed836</td></tr>
 </table><p>
 </body>
 </html>

@@ -41,9 +41,7 @@ public WebDriver driver;
 		String messageStr = activeElement.getAttribute("validationMessage");
 		System.out.println("Actual message appeared on screen: " + messageStr);
 		return messageStr;
-		//if(driver.findElement(username).getText().length()==0){
-			//System.out.println("Please fill username");
-			//System.out.println(driver.findElement(username).getText());
+		
 				}
 			
 		
@@ -67,9 +65,7 @@ public String displayAlert() {
 	
 return (driver.findElement(statusmessage).getText());
 	
-		//if((driver.findElement(statusmessage).isDisplayed())){
-		//System.out.println(driver.findElement(statusmessage).getText());
-				//}
+		
 		
 		
 		
@@ -77,20 +73,5 @@ return (driver.findElement(statusmessage).getText());
 
 
 
-//public static void main(String[] args) throws InterruptedException {
-//WebDriver driver=new ChromeDriver();
-//	SignInPage sin=new SignInPage(driver);
-//	driver.get("https://dsportalapp.herokuapp.com/home");
-//	sin.signin();
-//	sin.username("greenhorns");
-//	sin.Password("testing...");
-//	sin.Login();
-//	//sin.getusertext();
-//	Thread.sleep(2000);
-//	sin.errforUser();
-//	//sin.errpasswordName();
-//	//sin.displayAlert();
-//	//sin.getUserName();
-//	//sin.getpasswordName();
-//}
+
 }

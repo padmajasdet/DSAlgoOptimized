@@ -82,6 +82,13 @@
     <artifactId>maven-surefire-plugin</artifactId>
     <version>3.2.5</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-failsafe-plugin</artifactId>
+    <version>3.2.5</version>
+    <scope>test</scope>
+</dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
 <dependency>
     <groupId>io.cucumber</groupId>

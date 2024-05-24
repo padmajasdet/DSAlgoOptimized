@@ -51,20 +51,46 @@ public void user_enters_sheetname_and_rownumber(String sheetName, Integer rowNum
   String Password = testData.get(rowNumber).get("password");
   String Confirmpassword = testData.get(rowNumber).get("confirmpassword");
    String Message = testData.get(rowNumber).get("message");
-	
+   
   rp.register();
   rp.username(Username);
   rp.password(Password);
   rp.password2(Confirmpassword);
   System.out.println("user entered with  ***"+Username+"***"+Password+"***"+Confirmpassword );
-    
+    rp.registerbutton(); 
+    //System.out.println(Message);
+    //rp.getAlertMessage1();
+   // rp.errforUser1();
+//  if (testData.get(rowNumber).get("message") == "New Account Created. You are logged in as asdfgh")
+//  {
+//  		String successMessage = rp.getAlertMessage1();
+//    Assert.assertEquals(successMessage, "New Account Created. You are logged in as asdfgh");
+//   System.out.println(successMessage);
+//   
+//        }
+//  else if(testData.get(rowNumber).get("message")=="password_mismatch:The two password fields didn’t match." ) {
+//	String errMessage=   rp.getAlertMessage1();
+//	Assert.assertEquals(errMessage, "password_mismatch:The two password fields didn’t match.");
+//   System.out.println(errMessage);
+//  }
+//  else if(testData.get(rowNumber).get("message")=="Please fill out this field" ) {
+//	String emptyuser=  rp.errforUser1();
+//		Assert.assertEquals(emptyuser, "Please fill out this field");
+//     System.out.println(emptyuser);
+//
+//  }
+//  else {
+//	
+//	 System.out.println("Enter valid details");
+//  }	
+  
 }
 
 	
 @Then("user checks  the staus message")
 public void user_checks_the_staus_message() throws IOException {
 	
-	rp.registerbutton(); 
+	//rp.registerbutton(); 
 //	if (Message == "New Account Created. You are logged in as asdfgh")
 //    {
 //   		String successMessage = rp.getAlertMessage();

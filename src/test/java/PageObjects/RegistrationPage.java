@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.support.FindBy;
 //import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
 
 public class RegistrationPage {
 	public WebDriver driver;
@@ -40,15 +43,21 @@ public class RegistrationPage {
 	public void registerbutton()  {
 		driver.findElement(Registerbutton).click();
 				}
-public String getAlertMessage() {
-	return driver.findElement(alertmessage).getText();//password_mismatch:The two password fields didn’t match.
+public String getAlertMessage1() {
+	WebElement statusmessage=driver.findElement(alertmessage);
+	if(statusmessage.isDisplayed()) {
+		System.out.println(statusmessage.getText());
+				}
+	return statusmessage.getText();//password_mismatch:The two password fields didn’t match.
 	                                                  //New Account Created. You are logged in as asxcvb
 }
-public String errforUser() {
+public String errforUser1() {
 	WebElement activeElement = driver.switchTo().activeElement();
 	String messageStr = activeElement.getAttribute("validationMessage");
-	System.out.println("Actual message appeared on screen: " + messageStr);//please fill out this field
+	//System.out.println("Actual message appeared on screen: " + messageStr);//please fill out this field
 	return messageStr;
 
 }
+
+
 }

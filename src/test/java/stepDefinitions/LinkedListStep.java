@@ -37,7 +37,7 @@ public class LinkedListStep {
 		textcontextsetup.testbase.WebDriverManager();
 	}
 
-	@When("User clicks any of the {string} link")
+	@When("User clicks any of the {string} link of the Linked List landing page")
 	public void user_clicks_TopicCovered_link(String TopicCovered) {
 		// System.out.println("user_clicks_TopicCovered_link");
 		switch (TopicCovered) {
@@ -89,7 +89,7 @@ public class LinkedListStep {
 		// Assert.assertEquals(driver.getTitle(),"Introduction");
 	}
 
-	@Then("User should land on the corresponding {string} page")
+	@Then("User should land on the corresponding {string} page of the Linked List landing page")
 	public void user_should_land_on_the_corresponding_page(String correspondingTopic) {
 		pageTitle = linkedListPage.getTitle();
 		switch (correspondingTopic) {
@@ -133,37 +133,36 @@ public class LinkedListStep {
 
 	}
 
-	@When("User should click on the Practice Here link")
+	@When("User should click on the Practice Here link of the Linked List landing page")
 	public void user_should_click_on_the_practice_here_link() {
 		linkedListPage.practiceQtns();
 
 	}
 
-	@Then("User should land on Practice button")
+	@Then("User should land on Practice button of the Linked List landing page")
 	public void user_should_land_on_practice_button() {
 		pageTitle = linkedListPage.getTitle();
 		Assert.assertEquals(pageTitle, "Practice Questions");
 	}
 
-	@Then("Navigate back to the corresponding topic page")
+	@Then("Navigate back to the corresponding topic page of the Linked List landing page")
 	public void navigate_back_to_the_corresponding_topic_page() {
 		//Thread.sleep(2000);
 		driver.navigate().back();
-
 	}
 
-	@Then("User clicks Try here button")
+	@Then("User clicks Try here button of the Linked List landing page")
 	public void user_clicks_try_here_button() {
 
 		linkedListPage.tryHereBtn();
 	}
-
-	@Then("Try Editor Is displayed on the {string} page")
-	public void try_editor_is_displayed(String pageTitle) {
+	@Then("Try Editor Is displayed on the {string} page of the Linked List landing page")
+	public void launch_try_editor_page(String pageTitle) {
 
 		Assert.assertEquals(tryEditorPage.getTitle(), pageTitle);
 		
 
 	}
+	
 
 }
