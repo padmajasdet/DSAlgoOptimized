@@ -25,12 +25,14 @@ public class GetStartedStep {
 
 	@When("The user clicks the {string} button")
 	public void the_user_clicks_the_button(String string) {
+		
 		gsp.get_started_click();
 	   
 	}
 	@Then("The user should land in Data Structure Introduction Page with Title {string}")
 	public void the_user_should_land_in_data_structure_introduction_page_with_title(String string) {
 		gsp.get_Title();
+		
 	     Assert.assertEquals(gsp.get_Title(),string);
 	    System.out.println("currently we are in "+gsp.get_Title())	;
 	}

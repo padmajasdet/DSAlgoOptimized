@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import utilities.ExcelReader;
 import utilities.TestBase;
-//Not to create objects in stepdefinition so page object manager is created
+//Not to create objects in step definition so page object manager is created
 
 public class PageObjectManager {
  public WebDriver driver;
@@ -13,8 +13,13 @@ public class PageObjectManager {
  GetStartedPage getstartedpage;
  ExcelReader excelreader;
  RegistrationPage registrationpage;
+ LinkedListPage linkedListPage;
+ TryEditorPage tryEditorPage;
+ DSIntroductionPage dsIntroductionPage;
+ HomePage homePage;
  ArrayPage arrayPage;
  GraphPage graphPage;
+ TreePage treePage;
  
 	public PageObjectManager(WebDriver driver) {
 		this.driver=driver;
@@ -35,7 +40,7 @@ public class PageObjectManager {
 		excelreader=new ExcelReader();
 		return excelreader;
 		
-			}
+	}
 	public RegistrationPage getRegistrationPage() {
 		registrationpage=new RegistrationPage(driver);
 		return registrationpage ;
@@ -44,9 +49,30 @@ public class PageObjectManager {
 		arrayPage =new ArrayPage(driver);
 		return arrayPage;
 	}
+	public LinkedListPage getLinkedListPage() {
+		linkedListPage = new LinkedListPage(driver);
+		return linkedListPage;
+	}
+	public HomePage getHomePage() {
+		homePage = new HomePage(driver);
+		return homePage;
+	}
+	public TryEditorPage getTryEditorPage() {
+		tryEditorPage = new TryEditorPage(driver);
+		return tryEditorPage;
+	}
+	public DSIntroductionPage getDsIntroductionPage() {
+		dsIntroductionPage = new DSIntroductionPage(driver);
+		return dsIntroductionPage;
+	}
 	public GraphPage getGraphPage() {
 		graphPage =new GraphPage(driver);
 		return graphPage;
+			
+	}
+	public TreePage getTreePage() {
+		treePage =new TreePage(driver);
+		return treePage;
 			
 	}
 	

@@ -12,8 +12,8 @@ Feature: Signin Page
 
     Examples: 
      | username  | password | status  |
-     | greenhorns |    testing...| You are logged in |
+     | greenhorns | testing... |You are logged in|
      | greenhorns |     inpass    |Invalid Username and Password|
      | inpass     |      testing...   |Invalid Username and Password|
-     |        |      testing...   |Please fill it out|
-     |   greenhorns     |        |Please fill it out|  
+     |        |      testing...   |Please fill out this field|
+     |   greenhorns     |        |Please fill out this field|  

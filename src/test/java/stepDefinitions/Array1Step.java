@@ -78,7 +78,7 @@ public class Array1Step {
 		arraypage.trHere();
 	}
 
-	@Then("User enters the text in editor from sheetname {string} and rownumber {int}")
+/*	@Then("User enters the text in editor from sheetname {string} and rownumber {int}")
 	public void user_enters_the_text_in_editor_from_sheetname_and_rownumber(String sheetName, Integer int1) throws InvalidFormatException, IOException, InterruptedException {
 		arraypage.cleartext();
 		String Excelpath= System.getProperty("user.dir")+"\\src\\test\\resources\\Registration (1).xlsx";
@@ -120,7 +120,7 @@ public class Array1Step {
 	@Then("The user should be able to see error message in alert window,accept the alert")
 	public void the_user_should_be_able_to_see_error_message_in_alert_window_accept_the_alert() {
 		arraypage.getAlert();
-	}
+	} */
 
 	@Then("navigates to  Arrays page")
 	public void navigates_to_arrays_page() {
