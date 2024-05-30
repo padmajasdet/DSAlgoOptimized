@@ -10,7 +10,7 @@ import PageObjects.PageObjectManager;
 //driver information is passed from here
 //to get driver information from one class to another we use context class
 public class TextContextSetup {
-public WebDriver driver;
+//public WebDriver driver;
 public PageObjectManager pageobjectmanager;
 public TestBase testbase;
 public ExcelReader excelreader;
