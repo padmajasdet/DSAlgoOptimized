@@ -21,6 +21,7 @@ public class PageObjectManager {
 	GraphPage graphPage;
 	TreePage treePage;
 	StackPage stackPage;
+	QueuePage queuePage;
 
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -80,6 +81,12 @@ public class PageObjectManager {
 	public GraphPage getGraphPage() {
 		graphPage = new GraphPage(driver);
 		return graphPage;
+	}
+
+	public QueuePage getQueuePage() {
+		queuePage = new QueuePage(driver);
+		return queuePage;
+
 	}
 
 	public TreePage getTreePage() {
